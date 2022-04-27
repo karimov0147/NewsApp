@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:actionBarSize"
+    app:cardBackgroundColor="#2196F3"
+    app:cardCornerRadius="0dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="16dp">
+        
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/back_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:text="Appname"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fav_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_baseline_assignment_24"/>
+
+
+        
+        
+        
+        
+        
+        
+        
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

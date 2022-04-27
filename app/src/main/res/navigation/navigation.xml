@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/dashboardScreen">
+
+    <fragment
+        tools:layout="@layout/screen_dashboard"
+        android:id="@+id/dashboardScreen"
+        android:name="com.example.dependencyinjectionsquare.ui.screens.DashboardScreen"
+        android:label="DashboardScreen" >
+        <action
+            android:id="@+id/action_dashboardScreen_to_articleScreen"
+            app:destination="@id/articleScreen" />
+        <action
+            android:id="@+id/action_dashboardScreen_to_favoriteScreen2"
+            app:destination="@id/favoriteScreen2" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleScreen"
+        tools:layout="@layout/screen_article"
+        android:name="com.example.dependencyinjectionsquare.ui.screens.ArticleScreen"
+        android:label="ArticleScreen" >
+        <argument
+            android:name="category"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_favorite"
+        android:id="@+id/favoriteScreen2"
+        android:name="com.example.dependencyinjectionsquare.ui.screens.FavoriteScreen"
+        android:label="FavoriteScreen" />
+</navigation>
